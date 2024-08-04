@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+
+np.random.seed(42)
+ages = np.random.randint(0, 100, size=1000)
+
+
+plt.figure(figsize=(10, 6))
+sns.histplot(ages, bins=20, kde=False, color='blue')
+
+
+plt.title('Age Distribution')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+
+
+plt.show()
